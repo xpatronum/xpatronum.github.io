@@ -4,6 +4,8 @@ date: "2024-05-02 00:00:00 +0800"
 categories: [learning]
 tags: [nlp]
 math: true
+description: What is information retrieval in a nutshell
+pin: true
 ---
 
 Введем вспомогательные определения, которые будут использоваться в дальнейшем.

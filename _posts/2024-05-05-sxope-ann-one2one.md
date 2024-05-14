@@ -4,6 +4,7 @@ date: "2024-05-06 00:00:00 +0800"
 categories: [learning]
 tags: [nlp]
 math: true
+description: Interesting observations about medical field
 ---
 
 ### LOINCs, в разрезе каждой группы болезней
