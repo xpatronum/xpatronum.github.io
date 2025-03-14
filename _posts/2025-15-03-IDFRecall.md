@@ -92,7 +92,7 @@ Which means that about half of the query’s words “cover” the important wor
 
 ---
 
-In my tests, adding this type of ranking increases **HitRate@k** by an average of **5–10%**. Below is an example of what happens when we use [$E5_{\text{base}}$](https://huggingface.co/intfloat/e5-base) as the neural model $R_e$. **$R_{\gamma}$** represents the search accuracy if we choose candidates and then perform additional re-ranking.
+In my tests, adding this type of ranking increases **HitRate@k** by an average of **5–10%**. Below is an example of what happens when we use [$E5_{base}$](https://huggingface.co/intfloat/e5-base) as the neural model $R_e$. **$R_{\gamma}$** represents the search accuracy if we choose candidates and then perform additional re-ranking.
 
 Below is the updated table with results from the **polaroids.ai** dataset:
 
