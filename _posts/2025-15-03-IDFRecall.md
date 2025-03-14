@@ -1,5 +1,5 @@
 ---
-title: "Ranking in NLP"
+title: "IDFRecall"
 date: "2025-03-15 00:00:00 +0800"
 categories: [learning]
 tags: [nlp]
@@ -11,17 +11,17 @@ pin: true
 > Currently, to obtain the “correct” chunks (paragraphs) for a query \(q_i\), different approaches are used. In practice, there are usually two:
 
 1. **Embedding-based search**  
-   \(R_e(q_i) \mapsto \{d_1, d_2, \cdots, d_k\}\) — here we want to “map” vector representations of queries and paragraphs into a single Euclidean space.
+   $R_e(q_i) \mapsto \{d_1, d_2, \cdots, d_k\}$— here we want to “map” vector representations of queries and paragraphs into a single Euclidean space.
 
 2. **Keyword-based search**  
-   \(R_k\), using, for example, BM25 or TF-IDF.  
+   $R_k$, using, for example, BM25 or TF-IDF.  
    If you don’t know what these are, <a href="https://huggingface.co/blog/xhluca/bm25s">here</a> is a resource — read it (and better yet, try it right away!).
 
 3. **Hybrid search**  
    A combination of the first two approaches,  
-   \[
+   $$
    R_h = \alpha \times R_e(q_i) + (1 - \alpha) \times R_k(q_i).
-   \]
+   $$
 
 But what if neither approach gives a complete set of results? And you still want to provide context and retrieve keywords? In this case, you have to delve into word ranking.
 
@@ -42,7 +42,7 @@ For example, consider the query above \(q_i =\) "Какие правила ар�
 - \(w_2 =\) **мятеж** — appears once.  
 - \(w_1 =\) **голодные** (ых) **игры** (игр) — appears once.
 
-**Weight** of each word \(w_l\) is calculated by the formula:
+**Weight** of each word $w_l$ is calculated by the formula:
 
 \[
 \frac{1.0}{\ln(1 + \mathrm{count}(w_l))}.
