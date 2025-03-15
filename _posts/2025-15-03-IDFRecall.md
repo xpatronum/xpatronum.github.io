@@ -30,7 +30,7 @@ Meet **IDF-Recall**.
 
 ---
 
-![](./docs/sample-hunger-games.png)
+![](assets/sample-hunger-games.png)
 
 **Intuition:** We weight all the words of the query $q_i$ and measure how strongly they cover the keywords of the paragraph (chunk).
 
